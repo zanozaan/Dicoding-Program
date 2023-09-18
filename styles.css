@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff6c3;
+}
+
+h2 {
+  color: #850000;
+}
+
+p {
+  color: black;
+  font-size: 0.9rem;
+}
+
+main {
+  overflow: auto;
+}
+
+header {
+  display: inline;
+}
+/* NAV START */
+.header-container {
+  height: 4.7rem;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: #dc0000;
+  padding: 1rem;
+}
+
+nav li {
+  display: inline;
+}
+
+nav {
+  margin-right: 7rem;
+  position: sticky;
+}
+
+.header-container ul li {
+  display: inline-block;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.header-container li {
+  list-style-type: none;
+  padding: 25px;
+}
+
+.header-container ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+
+nav a {
+  font-weight: 400;
+}
+
+nav a:hover {
+  border-bottom: 1px solid black;
+  font-weight: bold;
+}
+
+.logo a img {
+  height: 70px;
+}
+
+/* NAV END */
+
+#content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+#content,
+aside {
+  display: inline;
+}
+/* HOME START */
+#home {
+  background-color: #a71414;
+}
+
+.home-container {
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.peta-ina {
+  width: 100%;
+  object-fit: cover;
+}
+
+article {
+  width: 30%;
+}
+
+.description-ina p {
+  color: white;
+  text-align: left;
+  padding-right: 1.5rem;
+}
+
+/* HOME END */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+/* CARD START */
+
+.card-container {
+  width: 100%;
+  margin: 2rem 0;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.description-card {
+  padding: 0.5rem;
+  line-height: 1.5em;
+}
+
+/* CARD END */
+
+/* ASIDE START */
+aside {
+  width: 25%;
+  margin: 1rem;
+  margin-top: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  padding: 1rem;
+}
+
+aside img {
+  width: 100%;
+}
+
+tr {
+  text-align: left;
+}
+
+td,
+th {
+  padding: 1rem;
+}
+
+tr:hover {
+  background-color: #acacac;
+}
+
+td,
+th:hover {
+  border-radius: 10px;
+}
+
+.foto-dev {
+  margin: 1rem;
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+}
+/* ASIDE END */
+
+/* FOOTER START */
+footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: #dc0000;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h4 {
+  margin: 0 0 0.5rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+footer ul li {
+  margin: 0 10px;
+}
+
+footer ul li a {
+  color: #929292;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  color: #5c5c5c;
+}
+/* FOOTER END */
+
+@media screen and (max-width: 1200px) {
+  .home-container {
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .peta-ina {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .card-container {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  #content {
+    width: 100%;
+  }
+
+  aside {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+  }
+}
